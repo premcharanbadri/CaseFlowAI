@@ -1,6 +1,11 @@
 # CaseFlow AI - Service Operations Decision Optimization
 
 
+
+#### Live Demo: https://caseflowai.streamlit.app/
+
+
+
 ## The business problem
 
 A hypothetical B2B services business receives 900 requests/month across billing, access, technical, account, and fulfillment functions. Manual categorization, missing information, wrong routing, and uneven queues drive delay. The business wants to reduce cycle time and total cost **without increasing routing mistakes or violating service-level commitments**.
