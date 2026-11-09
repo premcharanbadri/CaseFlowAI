@@ -1,0 +1,53 @@
+{
+  "notice": "SYNTHETIC DATA AND MODELED ASSUMPTIONS: not historical employer performance or measured causal impact",
+  "dataset": {
+    "all": 15300,
+    "train": 10771,
+    "validation": 1757,
+    "out_of_time_test": 2772,
+    "period": "2023-01 through 2024-05"
+  },
+  "operations": {
+    "average_handle_minutes": 12.64,
+    "reroute_rate": 0.1005,
+    "sla_breach_rate": 0.0469,
+    "incomplete_fields_rate": 0.1501,
+    "average_handling_time_rerouted": 17.68,
+    "average_handling_time_first_pass": 12.08
+  },
+  "model": {
+    "held_out_full_coverage_accuracy": 0.8626,
+    "held_out_macro_f1": 0.8637,
+    "selected_threshold": 0.55,
+    "ai_policy": {
+      "threshold": 0.55,
+      "coverage": 0.6295,
+      "precision_routed": 0.9994,
+      "error_rate_all_cases": 0.0004,
+      "auto_routed": 1745,
+      "wrong_routes": 1
+    },
+    "rules_policy": {
+      "coverage": 0.5761,
+      "precision_routed": 0.8222,
+      "error_rate_all_cases": 0.1025,
+      "auto_routed": 1597,
+      "wrong_routes": 284
+    },
+    "rules_net_minutes_per_case": 1.3631,
+    "ai_net_minutes_per_case": 2.8285
+  },
+  "financial": {
+    "monthly_volume": 900,
+    "labor_rate_per_hour": 25.0,
+    "gross_saved_minutes_per_eligible_case": 5.0,
+    "qa_minutes_per_eligible_case": 0.5,
+    "additional_minutes_per_wrong_routing": 12.0,
+    "one_time_implementation_cost": 8000.0,
+    "annual_software_cost": 1800.0,
+    "monthly_released_hours": 42.43,
+    "annual_capacity_value": 12728.08,
+    "first_year_net_capacity_value": 2928.08,
+    "steady_state_annual_net_capacity_value": 10928.08
+  }
+}
