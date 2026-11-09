@@ -1,6 +1,5 @@
-# CaseFlow AI — Service Operations Decision Optimization
+# CaseFlow AI - Service Operations Decision Optimization
 
-> **Educational portfolio prototype. All 15,300 service cases are synthetic.** This is not evidence of work performed at Globe Infotech or any other employer, and the financial results are **modeled capacity values**, not bankable savings.
 
 ## The business problem
 
@@ -26,7 +25,7 @@ streamlit run app.py
 
 No API keys or internet access are required to generate the data, train the model, score the test data, or run the dashboard after dependencies are installed.
 
-### What is genuinely implemented
+### What is implemented
 
 - Deterministic synthetic case generation with timestamps, unstructured descriptions, missing fields, first-route errors, case handling times, waiting times, and SLA outcomes
 - Temporal train/validation/test split, preventing random-split time leakage
@@ -122,15 +121,3 @@ flowchart TD
 - `docs/EXECUTIVE_DECISION_MEMO.md`: evidence-based recommendation
 - `docs/DATA_DICTIONARY.md`: definitions, measurement windows, caveats
 - `tests/test_caseflow.py`: tests covering model guardrails and economics
-
-## Questions a strong interviewer will ask
-
-1. Why prioritize misrouting instead of increasing staffing? What alternative hypotheses were rejected?
-2. Why use thresholded classification instead of a state-of-the-art language model?
-3. How does routing precision change when automation coverage rises?
-4. What does the financial model count as **incremental** benefit? Which costs are missing?
-5. What would invalidate this model after deployment?
-6. How could a rise in handle time reflect an inflow of more difficult cases rather than a failed intervention?
-7. How would you separate operational effects from seasonality and staffing changes?
-
-*Note: the model is trained on intentionally simplified, labeled synthetic text. Performance is likely optimistic relative to real CRM tickets. Evaluations do not justify live deployment.*
